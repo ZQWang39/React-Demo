@@ -1,12 +1,5 @@
-import React from "react";
-import Header from "./Header.jsx";
-
 function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
