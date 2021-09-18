@@ -2,10 +2,10 @@ import classes from "./MeetupList.module.css";
 import React from "react";
 import MeetupItem from "./MeetupItem";
 
-const MeetyupList = (props) => {
+const MeetyupList = ({ meetups }) => {
   return (
     <ul className={classes.list}>
-      {props.meetups.map((meetup) => (
+      {meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
           title={meetup.title}
