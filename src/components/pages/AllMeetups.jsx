@@ -1,6 +1,5 @@
 import React from "react";
-import MeetupItem from "../meetups/MeetupItem";
-import MeetyupList from "../meetups/MeetyupList";
+import MeetupList from "../meetups/MeetyupList";
 
 const DUMMY_DATA = [
   {
@@ -26,7 +25,7 @@ const AllMeetUps = () => {
   return (
     <section>
       <h1>All Meetups Page</h1>
-      <MeetyupList meetups={DUMMY_DATA} />
+      <MeetupList meetups={DUMMY_DATA} />
     </section>
   );
 };
