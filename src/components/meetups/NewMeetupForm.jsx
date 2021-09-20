@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Card from "../ui/Card";
 import classes from "./NewMeetupForm.module.css";
-const NewMeetupForm = () => {
+const NewMeetupForm = (props) => {
   const titleInput = useRef();
   const imgInput = useRef();
   const addressInput = useRef();
@@ -20,8 +20,9 @@ const NewMeetupForm = () => {
       description: description,
       address: address,
     };
-    console.log(userInput);
+    props.addMeetup(userInput);
   };
+
   return (
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
