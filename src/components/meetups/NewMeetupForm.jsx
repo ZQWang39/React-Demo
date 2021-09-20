@@ -11,12 +11,12 @@ const NewMeetupForm = (props) => {
     e.preventDefault();
     // console.log(title, img, address, description);
     const title = titleInput.current.value;
-    const img = imgInput.current.value;
+    const image = imgInput.current.value;
     const description = descriptionInput.current.value;
     const address = addressInput.current.value;
     const userInput = {
       title: title,
-      img: img,
+      image: image,
       description: description,
       address: address,
     };

@@ -8,12 +8,7 @@ const NewMeetup = () => {
     axios
       .post(
         "https://react-demo-de6d4-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json",
-
-        // method: "POST",
         userInput
-        // headers: {
-        //   "Content-Type": "application/json",
-        // },
       )
       .then(history.replace("/"));
     //.replace() back button will not work, .push() backbutton will take the page back to the submit page
