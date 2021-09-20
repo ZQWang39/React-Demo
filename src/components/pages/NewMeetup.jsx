@@ -4,14 +4,14 @@ import axios from "axios";
 
 const NewMeetup = () => {
   const handleAddMeetup = (userInput) => {
-    fetch(
+    axios.post(
       "https://react-demo-de6d4-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json",
       {
-        method: "POST",
-        body: JSON.stringify(userInput),
-        headers: {
-          "Content-Type": "application/json",
-        },
+        // method: "POST",
+        userInput,
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
       }
     );
   };
