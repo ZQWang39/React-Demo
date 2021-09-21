@@ -5,14 +5,17 @@ import App from "./App";
 // import UseRef from "./components/UseRef/UseRef";
 // import SearchFilter from "./components/SearchFilter/SearchFilter.jsx";
 import { BrowserRouter } from "react-router-dom";
+import { FavoritesContextProvider } from "./components/store/FavoritesContext.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-      {/* <UseRef />
+    <FavoritesContextProvider>
+      <BrowserRouter>
+        <App />
+        {/* <UseRef />
     <SearchFilter /> */}
-    </BrowserRouter>
+      </BrowserRouter>
+    </FavoritesContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
